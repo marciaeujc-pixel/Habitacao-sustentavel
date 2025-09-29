@@ -1,0 +1,31 @@
+📘 Diagrama de Classes (Texto)
+Classe 
+• 	Atributos:
+• 	: string
+• 	: float
+
+Classe 
+• 	Atributos:
+• 	: int
+• 	: string
+• 	: string
+• 	: string
+• 	: float
+• 	Métodos:
+• 	: retorna uma string com os detalhes da habitação
+
+Funções em 
+• 	: retorna um objeto 
+• 	: retorna lista de  com valor menor ou igual ao informado
+
+✅ Requisitos Visíveis
+• 	Cadastro de cliente e exibição de casas sustentáveis
+• 	Filtragem por tipo de sustentabilidade (Básica ou Avançada)
+• 	Interface de menu interativo com seleção por ID
+• 	Exibição de detalhes da casa selecionada
+• 	Confirmação de aquisição
+
+🔒 Requisitos Invisíveis
+• 	Organização modular em três arquivos (, , )
+• 	Uso de orientação a objetos
+• 	Separação entre dados e lógica de apresentação
