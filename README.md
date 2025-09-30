@@ -1,7 +1,7 @@
 # 🌱 Agência de Habitação Sustentável
 
 <p align="center">
-  <img src="imagens/banner.png" alt="Banner do Projeto" width="800"/>
+  <img src="imagens/banner.png" alt="Banner do Projeto" width="600"/>
 </p>
 
 Bem-vindo à **Agência de Habitação Sustentável**, uma aplicação interativa desenvolvida em **Python** que simula a escolha e aquisição de casas com diferentes níveis de sustentabilidade.  
@@ -37,7 +37,7 @@ O sistema foi construído com a arquitetura **MVC (Model-View-Controller)**, gar
 
 ### Casas Básicas
 <p align="center">
-  <img src="imagens/casas_basicas.png" alt="Casas Básicas" width="700"/>
+  <img src="imagens/casas_basicas.png" alt="Casas Básicas" width="400"/>
 </p>
 
 - **Casa Compacta**: pequena, eficiente, com captação de água da chuva.  
@@ -48,7 +48,7 @@ O sistema foi construído com a arquitetura **MVC (Model-View-Controller)**, gar
 
 ### Casas Medianas
 <p align="center">
-  <img src="imagens/casas_medianas.png" alt="Casas Medianas" width="700"/>
+  <img src="imagens/casas_medianas.png" alt="Casas Medianas" width="400"/>
 </p>
 
 - **Casa Modular**: estrutura flexível e ventilação cruzada.  
@@ -59,7 +59,7 @@ O sistema foi construído com a arquitetura **MVC (Model-View-Controller)**, gar
 
 ### Casas Avançadas
 <p align="center">
-  <img src="imagens/casas_avancadas.png" alt="Casas Avançadas" width="700"/>
+  <img src="imagens/casas_avancadas.png" alt="Casas Avançadas" width="400"/>
 </p>
 
 - **Casa EcoLuxo**: automação completa e certificação LEED.  
@@ -96,8 +96,3 @@ O sistema foi construído com a arquitetura **MVC (Model-View-Controller)**, gar
   [GitHub: gustavolima37](https://github.com/gustavolima37)  
 - Marcia Jacó  
   [GitHub: marciaeujc-pixel](https://github.com/marciaeujc-pixel)
-
-<p align="center">
-  <img src="https://em-content.zobj.net/thumbs/240/apple/354/man-technologist_1f468-200d-1f4bb.png" width="60"/>
-  <img src="https://em-content.zobj.net/thumbs/240/apple/354/woman-and-man-holding-hands_1f46b.png" width="60"/>
-</p>
