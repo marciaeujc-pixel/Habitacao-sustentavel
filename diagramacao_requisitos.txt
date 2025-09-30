@@ -38,3 +38,63 @@ Os requisitos não funcionais definem como o sistema deve se comportar — aspec
    - Respostas rápidas e sem travamentos, mesmo com múltiplas interações.
 7. **Documentação clara**
    - README completo com instruções de uso, estrutura do projeto e imagens ilustrativas.
+
+_________________________________________________________________________________
+
+---
+
+## 📐 Diagrama de Classes — Estrutura Escrita
+
+### 🔹 `model.py`
+Contém as **classes principais** que representam os dados do sistema.
+
+#### Classe `Cliente`
+- **Atributos**:
+  - `nome`: nome do cliente (string)
+
+#### Classe `Habitacao`
+- **Atributos**:
+  - `id_habitacao`: identificador único da casa (int)
+  - `endereco`: localização da casa (string)
+  - `tipo`: tipo da casa (string)
+  - `sustentabilidade`: categoria da casa (string)
+  - `valor`: valor da casa (float)
+- **Métodos**:
+  - `resumo()`: retorna uma string formatada com os dados principais da casa
+
+---
+
+### 🔹 `controller.py`
+Contém as **funções de lógica** e manipulação dos dados.
+
+#### Funções:
+- `cadastrar_cliente(nome)` → retorna um objeto `Cliente`
+- `obter_habitacoes_por_categoria(categoria)` → retorna uma lista de até 3 objetos `Habitacao` filtrados por sustentabilidade
+- `detalhes_casa_basica(tipo)` → retorna lista de características específicas
+- `detalhes_casa_mediana(tipo)` → idem para casas medianas
+- `detalhes_casa_avancada(tipo)` → idem para casas avançadas
+- `gerar_recibo(cliente, habitacao)` → retorna uma string formatada com os dados da compra
+
+---
+
+### 🔹 `view.py`
+É a **interface com o usuário**, responsável pela interação via terminal.
+
+#### Fluxo principal:
+1. Exibe mensagem de boas-vindas
+2. Solicita nome do cliente
+3. Apresenta menu de categorias
+4. Lista casas disponíveis
+5. Exibe detalhes e características adicionais
+6. Solicita confirmação de compra
+7. Gera recibo final
+
+---
+
+## 🔄 Relações entre os componentes
+
+- `view.py` chama funções do `controller.py` para manipular dados e lógica
+- `controller.py` utiliza as classes definidas em `model.py` para criar e acessar objetos
+- `model.py` define a estrutura dos dados que são exibidos e manipulados
+
+---
