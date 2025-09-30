@@ -1,67 +1,81 @@
 # 🌱 Agência de Habitação Sustentável
 
-# Este projeto é um sistema interativo que ajuda clientes a encontrar e adquirir casas sustentáveis de acordo com seu orçamento e preferências de sustentabilidade. 
-# Desenvolvido em Python com foco em modularidade, clareza e boas práticas de orientação a objetos.
+<p align="center">
+  <img src="imagens/banner.png" alt="Banner do Projeto" width="800"/>
+</p>
+
+Bem-vindo à **Agência de Habitação Sustentável**, uma aplicação interativa desenvolvida em **Python** que simula a escolha e aquisição de casas com diferentes níveis de sustentabilidade.  
+O sistema foi construído com a arquitetura **MVC (Model-View-Controller)**, garantindo organização, escalabilidade e facilidade de manutenção.
 
 ---
 
-## 📦 Estrutura do Projeto
+## 🚀 Funcionalidades
 
+- 👤 Cadastro de cliente  
+- 🏡 Escolha entre casas **Básicas**, **Medianas** ou **Avançadas**  
+- 🔍 Visualização de até 3 opções por categoria  
+- 📋 Detalhes completos da casa selecionada  
+- 🌿 Características adicionais específicas por tipo de casa  
+- 🧾 Confirmação de compra com **recibo elegante** ao final  
+
+---
+
+## 🧱 Estrutura do Projeto
+
+```bash
+📁 projeto/
+├── model.py         # Classes Cliente e Habitação
+├── controller.py    # Lógica de negócio e dados das casas
+├── view.py          # Interface com o usuário (CLI)
+├── imagens/         # Imagens ilustrativas para o README
+└── README.md        # Documentação do projeto
 ```
-├── cliente.py          # Classe Cliente
-├── sistema.py          # Classe Habitacao + funções de sistema
-├── main.py             # Interface interativa com o usuário
-```
 
 ---
 
-## 🧠 Funcionalidades
+## 🏡 Tipos de Casas Sustentáveis
 
-- Cadastro de cliente com nome e orçamento
-- Listagem de casas sustentáveis por nível (Básica ou Avançada)
-- Filtragem por tipo de sustentabilidade
-- Exibição de detalhes da casa selecionada
-- Confirmação de aquisição com mensagem personalizada
+### Casas Básicas
+<p align="center">
+  <img src="imagens/casas_basicas.png" alt="Casas Básicas" width="700"/>
+</p>
 
----
-
-## 🧾 Requisitos
-
-### Visíveis
-- Interface de menu simples e intuitiva
-- Escolha de casas por tipo de sustentabilidade
-- Visualização de detalhes e confirmação de compra
-
-### Invisíveis
-- Organização modular em três arquivos
-- Uso de classes e encapsulamento
-- Separação entre lógica de negócio e apresentação
+- **Casa Compacta**: pequena, eficiente, com captação de água da chuva.  
+- **Casa Solar**: equipada com painéis solares e materiais recicláveis.  
+- **Casa Reflorestada**: integrada à natureza com jardim vertical e compostagem.
 
 ---
 
-📘 Diagrama de Classes (Texto)
+### Casas Medianas
+<p align="center">
+  <img src="imagens/casas_medianas.png" alt="Casas Medianas" width="700"/>
+</p>
 
-Classe Cliente
-- Atributos:
-- nome: string
-- valor_disponivel: float
+- **Casa Modular**: estrutura flexível e ventilação cruzada.  
+- **Casa Térmica**: isolamento térmico e aquecimento solar.  
+- **Casa Verde**: telhado verde e irrigação automatizada.
 
-Classe Habitacao
-- Atributos:
-- id_habitacao: int
-- endereco: string
-- tipo: string
-- sustentabilidade: string
-- valor: float
-- Métodos:
-- resumo(): retorna uma string com os detalhes da habitação
-
-Funções em sistema.py
-- cadastrar_cliente(nome, valor): retorna um objeto Cliente
-- filtrar_por_orcamento(valor): retorna lista de Habitacao com valor menor ou igual ao informado
 ---
 
-## 🚀 Como executar
+### Casas Avançadas
+<p align="center">
+  <img src="imagens/casas_avancadas.png" alt="Casas Avançadas" width="700"/>
+</p>
+
+- **Casa EcoLuxo**: automação completa e certificação LEED.  
+- **Casa Premium**: energia solar com bateria e acabamentos ecológicos.  
+- **Casa BioLuxo**: bioconstrução com purificação de ar e design biofílico.
+
+---
+
+## 📦 Requisitos
+
+- Python 3.10 ou superior  
+- Terminal ou IDE com suporte à entrada de dados via `input()`
+
+---
+
+## ▶️ Como Executar
 
 1. Clone o repositório:
    ```bash
@@ -71,9 +85,19 @@ Funções em sistema.py
 
 2. Execute o programa:
    ```bash
-   python main.py
+   python view.py
    ```
 
-## 🧑‍💻🧑‍💻 Autores
+---
 
-## Gustavo Lima https://github.com/gustavolima37  |  Marcia Jacó - https://github.com/marciaeujc-pixel
+## 👨‍💻👨‍💻 Desenvolvido com carinho por apaixonados por código
+
+- Gustavo Lima  
+  [GitHub: gustavolima37](https://github.com/gustavolima37)  
+- Marcia Jacó  
+  [GitHub: marciaeujc-pixel](https://github.com/marciaeujc-pixel)
+
+<p align="center">
+  <img src="https://em-content.zobj.net/thumbs/240/apple/354/man-technologist_1f468-200d-1f4bb.png" width="60"/>
+  <img src="https://em-content.zobj.net/thumbs/240/apple/354/woman-and-man-holding-hands_1f46b.png" width="60"/>
+</p>
