@@ -1,31 +1,40 @@
-📘 Diagrama de Classes (Texto)
-Classe 
-• 	Atributos:
-• 	: string
-• 	: float
+## ✅ Requisitos Funcionais
 
-Classe 
-• 	Atributos:
-• 	: int
-• 	: string
-• 	: string
-• 	: string
-• 	: float
-• 	Métodos:
-• 	: retorna uma string com os detalhes da habitação
+Os requisitos funcionais descrevem o que o sistema deve fazer — suas funcionalidades principais:
 
-Funções em 
-• 	: retorna um objeto 
-• 	: retorna lista de  com valor menor ou igual ao informado
+1. **Cadastro de cliente**
+   - Permitir que o usuário informe seu nome para iniciar a simulação.
+2. **Exibição de categorias de casas**
+   - Apresentar três categorias de habitação sustentável: Básica, Mediana e Avançada.
+3. **Listagem de opções por categoria**
+   - Mostrar até três casas disponíveis por categoria selecionada.
+4. **Visualização de detalhes da casa**
+   - Exibir informações como tipo, endereço, valor e nível de sustentabilidade.
+5. **Exibição de características adicionais**
+   - Mostrar atributos específicos de cada tipo de casa conforme sua categoria.
+6. **Seleção de casa por ID**
+   - Permitir que o usuário selecione uma casa pelo seu identificador único.
+7. **Confirmação de compra**
+   - Solicitar confirmação do usuário para finalizar a aquisição da casa.
+8. **Geração de recibo**
+   - Exibir um recibo com os dados da compra após a confirmação.
+---
 
-✅ Requisitos Visíveis
-• 	Cadastro de cliente e exibição de casas sustentáveis
-• 	Filtragem por tipo de sustentabilidade (Básica ou Avançada)
-• 	Interface de menu interativo com seleção por ID
-• 	Exibição de detalhes da casa selecionada
-• 	Confirmação de aquisição
+## ⚙️ Requisitos Não Funcionais
 
-🔒 Requisitos Invisíveis
-• 	Organização modular em três arquivos (, , )
-• 	Uso de orientação a objetos
-• 	Separação entre dados e lógica de apresentação
+Os requisitos não funcionais definem como o sistema deve se comportar — aspectos de qualidade, desempenho e usabilidade:
+
+1. **Arquitetura modular (MVC)**
+   - Separação clara entre dados (Model), lógica (Controller) e interface (View).
+2. **Interface amigável**
+   - Interação via terminal com mensagens claras e uso de emojis para engajamento.
+3. **Validação de entrada**
+   - Verificação de dados inseridos pelo usuário para evitar erros e falhas.
+4. **Portabilidade**
+   - Compatível com qualquer sistema que tenha Python 3.10+ instalado.
+5. **Extensibilidade**
+   - Estrutura preparada para futuras melhorias como persistência de dados, interface gráfica ou integração com APIs.
+6. **Desempenho**
+   - Respostas rápidas e sem travamentos, mesmo com múltiplas interações.
+7. **Documentação clara**
+   - README completo com instruções de uso, estrutura do projeto e imagens ilustrativas.
