@@ -77,3 +77,16 @@ def detalhes_casa_avancada(tipo):
         ]
     }
     return detalhes.get(tipo, [])
+
+def gerar_recibo(cliente, habitacao):
+    return (
+        "\n================ RECIBO DE COMPRA =================\n"
+        f"Cliente: {cliente.nome}\n"
+        f"ID da Habitação: {habitacao.id_habitacao}\n"
+        f"Tipo: {habitacao.tipo}\n"
+        f"Sustentabilidade: {habitacao.sustentabilidade}\n"
+        f"Endereço: {habitacao.endereco}\n"
+        f"Valor Final: R${habitacao.valor:.2f}\n"
+        "==================================================\n"
+        "Obrigado por escolher uma habitação sustentável 🌱\n"
+    )

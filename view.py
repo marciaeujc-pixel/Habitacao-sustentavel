@@ -3,7 +3,8 @@ from controller import (
     obter_habitacoes_por_categoria,
     detalhes_casa_basica,
     detalhes_casa_mediana,
-    detalhes_casa_avancada
+    detalhes_casa_avancada,
+    gerar_recibo
 )
 
 print('==================================================')
@@ -40,6 +41,10 @@ while True:
     if escolha_id.lower() == 'v':
         continue
 
+    if not escolha_id.isdigit():
+        print('ID inválido. Retornando ao menu.')
+        continue
+
     selecionada = next((c for c in casas if str(c.id_habitacao) == escolha_id), None)
     if selecionada:
         print('\nDetalhes da casa selecionada:')
@@ -62,6 +67,7 @@ while True:
         confirmar = input('\nDeseja adquirir esta casa? (S/N): ')
         if confirmar.lower() == 's':
             print(f'\nParabéns, {cliente.nome}! Você escolheu a {selecionada.tipo} localizada em {selecionada.endereco}.')
+            print(gerar_recibo(cliente, selecionada))
             break
         else:
             print('Voltando ao menu...')
